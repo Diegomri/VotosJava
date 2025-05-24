@@ -1,10 +1,9 @@
 package com.votos.v2.repository;
 
-import org.springframework.data.repository.PagingAndSortingRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
 import com.votos.v2.model.Centro;
 
-public interface CentroRepository extends PagingAndSortingRepository<Centro, Long> {
-    // Additional query methods can be defined here if needed
+public interface CentroRepository extends JpaRepository<Centro, Integer> {
 
 }
